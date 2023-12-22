@@ -191,14 +191,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: opacity 0.5s, transform 0.5s;
 }
 
 .nav.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(100);
 }
 
 .nav__logo,
@@ -235,7 +232,6 @@ img {
     transition: 0.3s;
   }
 }
-
 .nav__list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -1021,6 +1017,7 @@ img {
 }
 
 /*========== SCROLL BAR ==========*/
+
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: var(--scroll-bar-color);
@@ -1035,6 +1032,7 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
+
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
@@ -1171,6 +1169,7 @@ img {
       padding: 0 1rem;
     }
 
+    
     .nav {
       height: calc(var(--header-height) + 1.5rem);
       column-gap: 1rem;
@@ -1189,10 +1188,6 @@ img {
     .nav__menu {
       margin-left: auto;
     }
-    .change-theme {
-      margin: 0;
-    }
-
     .home__container {
       row-gap: 5rem;
     }
